@@ -51,6 +51,8 @@ liSolucion.append(randint(0, 9))
 liSolucion.append(randint(0, 9))
 liSolucion.append(randint(0, 9))
 
+print("*Solucion->"+str(liSolucion))
+
 #Variable donde almacenamos temporalmente el valor introducido por el usuario
 inUsuario=[]
 
@@ -64,7 +66,11 @@ inCows=0
 
 while inCows < 4:
 
-  stUsuario=input('\nIntroduce un numero de 4 digitos:\n>>>> ')
+#modo Interactivo
+#  stUsuario=input('\nIntroduce un numero de 4 digitos:\n>>>> ')
+
+#modo Automatico
+  stUsuario=liSolucion
 
   #convertimos a int
   inUsuario.append(int(stUsuario[0]))
