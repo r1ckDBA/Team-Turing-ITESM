@@ -46,4 +46,8 @@ echo "Evaluating Lab6cowsbulls.py"
 cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Problema6/
 nohup pylint3 Lab6cowsbulls.py 2> /home/ubuntu/test_results/Lab6cowsbulls_static_analysis.log &
 
+echo "Generate Documentation"
+
+doxygen oxigen_config_labc
+
 echo "Done "
