@@ -20,6 +20,11 @@ python3 -m unittest Lab6-cowsbulls-UNITEST.py  2> /home/ubuntu/test_results/Lab6
 cd /home/ubuntu/test_results
 find . -name '*.log' | xargs grep -i "OK" -nr $1  | tee >(wc -l)
 
+echo "Generate Documentation"
+
+cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/
+doxygen oxigen_config_labc
+
 echo "Static Analysis Results"
 
 echo "Evaluating oddOrEven.py"
@@ -46,9 +51,6 @@ echo "Evaluating Lab6cowsbulls.py"
 cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Problema6/
 nohup pylint3 Lab6cowsbulls.py 2> /home/ubuntu/test_results/Lab6cowsbulls_static_analysis.log &
 
-echo "Generate Documentation"
 
-cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/
-doxygen oxigen_config_labc
 
 echo "Done "
