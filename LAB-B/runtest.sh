@@ -24,7 +24,7 @@ echo "Static Analysis Results"
 
 echo "Evaluating oddOrEven.py"
 cd /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Probelma1/
-pylint3 oddOrEven.py 2> /home/ubuntu/test_results/oddOrEven_static_analysis.log
+nohup pylint3 oddOrEven.py 2> /home/ubuntu/test_results/oddOrEven_static_analysis.log &
 
 
 echo "Done "
