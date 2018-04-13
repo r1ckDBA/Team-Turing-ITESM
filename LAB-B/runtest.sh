@@ -48,6 +48,7 @@ nohup pylint3 Lab6cowsbulls.py 2> /home/ubuntu/test_results/Lab6cowsbulls_static
 
 echo "Generate Documentation"
 
+cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/
 doxygen oxigen_config_labc
 
 echo "Done "
