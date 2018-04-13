@@ -19,3 +19,22 @@ python3 -m unittest Lab6-cowsbulls-UNITEST.py  2> /home/ubuntu/test_results/Lab6
 
 cd /home/ubuntu/test_results
 find . -name '*.log' | xargs grep -i "OK" -nr $1  | tee >(wc -l)
+
+echo "Static Analysis Results"
+cd /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Probelma1/
+pylint3 oddOrEven.py
+
+cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Problema2/
+pylint3 Lab2listconfusion.py
+
+cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Problema3/
+pylint3 listAnalysis3.py
+
+cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Problema4/
+pylint3 fileOverlap.py
+
+cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Problema5/
+pylint3 reverseWord5.py
+
+cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Problema6/
+pylint3 Lab6cowsbulls.py
