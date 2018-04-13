@@ -23,7 +23,7 @@ find . -name '*.log' | xargs grep -i "OK" -nr $1  | tee >(wc -l)
 echo "Generate Documentation"
 
 cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/
-doxygen oxigen_config_labc
+nohup doxygen oxigen_config_labc &
 
 echo "Static Analysis Results"
 
