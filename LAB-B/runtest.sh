@@ -26,24 +26,5 @@ echo "Evaluating oddOrEven.py"
 cd /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Probelma1/
 pylint3 oddOrEven.py
 
-echo "Evaluating Lab2listconfusion.py"
-cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Problema2/
-pylint3 Lab2listconfusion.py
-
-echo "Evaluating listAnalysis3.py"
-cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Problema3/
-pylint3 listAnalysis3.py
-
-echo "Evaluating fileOverlap.py"
-cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Problema4/
-pylint3 fileOverlap.py
-
-echo "Evaluating reverseWord5.py"
-cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Problema5/
-pylint3 reverseWord5.py
-
-echo "Evaluating Lab6cowsbulls.py"
-cd  /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Problema6/
-pylint3 Lab6cowsbulls.py
 
 echo "Done "
