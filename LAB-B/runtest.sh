@@ -1,3 +1,4 @@
+echo  "Begin Automated Testing."
 cd /var/lib/jenkins/workspace/Free\ Style\ Project/LAB-B/Probelma1/
 python3 -m unittest oddOrEven_unittest.py  2> /home/ubuntu/test_results/oddOrEven.log
 
